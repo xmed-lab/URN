@@ -6,9 +6,9 @@ This is a PyTorch implementation of [Uncertainty Estimation via Response Scaling
 
 In this papper, we mitigate the noise of pseudo-mask in segmentation phase via uncertainty from response scaling which simulates the behavior of noise. This technique is applicable to all weakly-supervised semantic segmentation methods based on fully-supervised semantic segmentation.
 
-[uncertainty visualization](resources/uncertainty_vis.png)
+![uncertainty visualization](resources/uncertainty_vis.png)
 
-[framework visualization](resources/process.pdf)
+![framework visualization](resources/process.pdf)
 
 ### Preparation
 (Extract code of BaiduYun: mtci)
