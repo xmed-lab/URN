@@ -2,7 +2,7 @@
 
 ### Introduction
 
-This is a PyTorch implementation of [Uncertainty Estimation via Response Scaling for Pseudo-mask Noise Mitigation in Weakly-supervised Semantic Segmentation](https://arxiv.org/pdf/2108.12995.pdf) (AAAI2022), based on [mmsegmentation](https://github.com/open-mmlab/mmsegmentation). Please refer the classification phase to [PMM](https://github.com/Eli-YiLi/PMM) and refer the segmentation phase to [WSSS_MMSeg](https://github.com/Eli-YiLi/WSSS_MMSeg).
+This is a PyTorch implementation of [Uncertainty Estimation via Response Scaling for Pseudo-mask Noise Mitigation in Weakly-supervised Semantic Segmentation]() (AAAI2022), based on [mmsegmentation](https://github.com/open-mmlab/mmsegmentation). Please refer the classification phase to [PMM](https://github.com/Eli-YiLi/PMM) and refer the segmentation phase to [WSSS_MMSeg](https://github.com/Eli-YiLi/WSSS_MMSeg).
 
 In this papper, we mitigate the noise of pseudo-mask in segmentation phase via uncertainty from response scaling which simulates the behavior of noise. This technique is applicable to all weakly-supervised semantic segmentation methods based on fully-supervised semantic segmentation.
 
