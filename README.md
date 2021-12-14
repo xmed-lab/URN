@@ -15,15 +15,15 @@ Framework visualization
 ### Preparation
 (Extract code of BaiduYun: mtci)
 ##### Datasets and pretrained weights
-VOC12 [OneDrive](https://1drv.ms/f/s!Agn5nXKXMkK5aigB0g238YxuTxs), [BaiduYun](https://pan.baidu.com/s/1GL3zXZuapuXmH9E7Xy8-Fg)
-COCO14 [BaiduYun](https://pan.baidu.com/s/1GL3zXZuapuXmH9E7Xy8-Fg)
+VOC12 [OneDrive](https://1drv.ms/f/s!Agn5nXKXMkK5aigB0g238YxuTxs), [BaiduYun](https://pan.baidu.com/s/1GL3zXZuapuXmH9E7Xy8-Fg);
+COCO14 [BaiduYun](https://pan.baidu.com/s/1GL3zXZuapuXmH9E7Xy8-Fg);
 Pretrained weights [OneDrive](https://1drv.ms/f/s!Agn5nXKXMkK5aigB0g238YxuTxs), [BaiduYun](https://pan.baidu.com/s/1GL3zXZuapuXmH9E7Xy8-Fg)
 ##### Pseduo-masks from classification phase
 Pseudo-masks (if you want to skip cls phase), [VOC12 OneDrive](https://onedrive.live.com/?authkey=%21ACgB0g238YxuTxs&cid=B9423297729DF909&id=B9423297729DF909%21110&parId=B9423297729DF909%21109&o=OneUp), [COCO14 BaiduYun](https://pan.baidu.com/s/1GL3zXZuapuXmH9E7Xy8-Fg)
 ##### Intermediate segmentation weights for uncertainty and cyclic pseudo-mask
-Intermediate weights (if you want to skip first segmentation), [VOC12 OneDrive](), [COCO14 OneDrive]()
+Intermediate weights (if you want to skip first segmentation), [BaiduYun](https://pan.baidu.com/s/1GL3zXZuapuXmH9E7Xy8-Fg)
 ##### Released segmentation weights for test and visualization
-Released weights, [VOC12 OneDrive](), [COCO14 OneDrive]()
+Released weights, [BaiduYun](https://pan.baidu.com/s/1GL3zXZuapuXmH9E7Xy8-Fg)
 
 Once downloaded, execute the following commands to link the datasets and weights.
 
@@ -32,13 +32,13 @@ Once downloaded, execute the following commands to link the datasets and weights
     mkdir data
     cd  data
     ln -s [path to model files] models
-    ln -s [path to VOC12] voc12
-    ln -s [path to COCO14] coco2014
+    ln -s [path to voc12] voc12
+    ln -s [path to coco2014] coco2014
     ln -s [path to your voc pseudo-mask] voc12/VOC2012/ppmg
     ln -s [path to your coco pseudo-mask] coco2014/voc_format/ppmg
 
 ### Run the code
-(If you don't run on server cluster based on srun, please modify the scripts "tools/dist_\*.sh" refer to given scripts"tools/srun_\*.sh")
+(If you don't run on server cluster based on srun, please modify the scripts "tools/dist_\*.sh" refer to given scripts "tools/srun_\*.sh")
 
 ##### Installation
     cd URN
