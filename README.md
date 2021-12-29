@@ -27,6 +27,7 @@ Released weights, [BaiduYun](https://pan.baidu.com/s/1GL3zXZuapuXmH9E7Xy8-Fg)
 
 Once downloaded, execute the following commands to link the datasets and weights.
 
+  ```shell
     git clone https://github.com/XMed-Lab/URN.git
     cd URN
     mkdir data
@@ -36,28 +37,38 @@ Once downloaded, execute the following commands to link the datasets and weights
     ln -s [path to coco2014] coco2014
     ln -s [path to your voc pseudo-mask] voc12/VOC2012/ppmg
     ln -s [path to your coco pseudo-mask] coco2014/voc_format/ppmg
-
+  ```
 ## Run the code
 (If you don't run on server cluster based on srun, please modify the scripts "tools/dist_\*.sh" refer to given scripts "tools/srun_\*.sh")
 
 **Installation**
+  ```shell
     cd URN
     pip install mmcv==1.1.5
     pip install -e .
+  ```
 (If you meet installation problems, please refer to [mmsegmentation](https://github.com/open-mmlab/mmsegmentation/blob/master/docs/get_started.md#installation))
 
 **Train segmentation for the first time (you can skip it by intermediate weights)**
+  ```shell
     cd URN
     bash tools/slurm_train.sh [cluster partition] python configs/pspnet_wsss/pspnet_res2net_20k_voc12aug_pus.py work_dirs/voc12_r2n_pus 8
+  ```
 
 **Uncertainty estimation and generate cyclic pseudo-mask**
+  ```shell
     bash tools/slurm_test.sh [cluster partition] python configs/pspnet_wsss/pspnet_res2net_20k_voc12aug_uncertainty.py [intermediate weights] 8
+  ```
     
 **Train segmentation with reweight strategy**
+  ```shell
     bash tools/slurm_train.sh [cluster partition] python configs/pspnet_wsss/pspnet_res2net_20k_voc12aug_urn.py work_dirs/voc12_r2n_urn 8
+  ```
 
 **Evaluate**
+  ```shell
     bash tools/slurm_test.sh [cluster partition] python configs/pspnet_wsss/pspnet_res2net_20k_voc12aug_test.py [Released weights] 8 
+  ```
 
 (Draw the predictions in "data/voc12/VOC2012/urn_r2n_test" with VOC palette and upload to the server for test mIoU. Change "test.txt" in the config to "val.txt" to get the val mIoU)
 
