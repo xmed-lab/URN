@@ -14,14 +14,18 @@ Framework visualization
 
 ## Preparation
 (Extract code of BaiduYun: mtci)
+
 **Datasets and pretrained weights**
 VOC12 [OneDrive](https://1drv.ms/f/s!Agn5nXKXMkK5aigB0g238YxuTxs), [BaiduYun](https://pan.baidu.com/s/1GL3zXZuapuXmH9E7Xy8-Fg);
 COCO14 [BaiduYun](https://pan.baidu.com/s/1GL3zXZuapuXmH9E7Xy8-Fg);
 Pretrained weights [OneDrive](https://1drv.ms/f/s!Agn5nXKXMkK5aigB0g238YxuTxs), [BaiduYun](https://pan.baidu.com/s/1GL3zXZuapuXmH9E7Xy8-Fg)
+
 **Pseduo-masks from classification phase**
 Pseudo-masks (if you want to skip cls phase), [VOC12 OneDrive](https://onedrive.live.com/?authkey=%21ACgB0g238YxuTxs&cid=B9423297729DF909&id=B9423297729DF909%21110&parId=B9423297729DF909%21109&o=OneUp), [COCO14 BaiduYun](https://pan.baidu.com/s/1GL3zXZuapuXmH9E7Xy8-Fg)
+
 **Intermediate segmentation weights for uncertainty and cyclic pseudo-mask**
 Intermediate weights (if you want to skip first segmentation), [BaiduYun](https://pan.baidu.com/s/1GL3zXZuapuXmH9E7Xy8-Fg)
+
 **Released segmentation weights for test and visualization**
 Released weights, [BaiduYun](https://pan.baidu.com/s/1GL3zXZuapuXmH9E7Xy8-Fg)
 
